@@ -20,7 +20,8 @@ public actor AuthService {
     #if canImport(Security) && canImport(AuthenticationServices)
     /// Creates a new authentication service with platform-default dependencies.
     ///
-    /// On Apple platforms, this uses `ASWebAuthSessionProvider` and `SystemKeychainStore`.
+    /// On Apple platforms, this uses `WKWebViewAuthSessionProvider` (which supports
+    /// popup windows required by OIDC providers such as Vault) and `SystemKeychainStore`.
     ///
     /// - Parameters:
     ///   - webAuthSession: The web authentication session provider.
@@ -29,7 +30,7 @@ public actor AuthService {
     ///   - enableBiometrics: Whether to require biometric authentication for token retrieval.
     @available(iOS 17.0, macOS 14.0, *)
     public init(
-        webAuthSession: WebAuthSessionProviding = ASWebAuthSessionProvider(),
+        webAuthSession: WebAuthSessionProviding = WKWebViewAuthSessionProvider(),
         keychainStore: KeychainStoring = SystemKeychainStore(),
         biometricAuth: BiometricAuthenticating = BiometricAuthenticator(),
         enableBiometrics: Bool = false

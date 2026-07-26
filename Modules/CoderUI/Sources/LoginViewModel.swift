@@ -69,12 +69,14 @@ public final class LoginViewModel: Sendable {
         do {
             // Attempt authentication
             _ = try await authService.authenticate(serverURL: url)
-            
+
             // Success - clear loading state and mark authenticated
             isLoading = false
             isAuthenticated = true
+        } catch AuthError.cancelled {
+            // User dismissed the auth sheet — reset silently so they can retry.
+            isLoading = false
         } catch {
-            // Handle error
             isLoading = false
             errorMessage = makeUserFriendlyError(error)
         }
