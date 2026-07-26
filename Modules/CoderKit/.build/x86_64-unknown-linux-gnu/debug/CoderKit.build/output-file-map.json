@@ -1,0 +1,41 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIClientProtocol.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIClientProtocol.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIClientProtocol.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIClientProtocol~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIClientProtocol.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIEndpoint.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIEndpoint.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIEndpoint.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIEndpoint~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIEndpoint.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIError.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIError.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIError.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIError~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/APIError.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/API/CoderAPIClient.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/CoderAPIClient.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/CoderAPIClient.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/CoderAPIClient~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/CoderAPIClient.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/Models/Workspace.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/Workspace.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/Workspace.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/Workspace~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/Workspace.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/Sources/Models/WorkspaceBuild.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/WorkspaceBuild.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/WorkspaceBuild.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/WorkspaceBuild~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKit.build/WorkspaceBuild.swiftdeps"
+  }
+}

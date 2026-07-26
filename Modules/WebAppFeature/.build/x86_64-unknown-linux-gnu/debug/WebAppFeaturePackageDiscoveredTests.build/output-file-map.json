@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.derived/WebAppFeatureTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/WebAppFeatureTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/WebAppFeatureTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/WebAppFeatureTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/WebAppFeatureTests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/all-discovered-tests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/all-discovered-tests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageDiscoveredTests.build/all-discovered-tests.swiftdeps"
+  }
+}

@@ -1,0 +1,6 @@
+/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIClientProtocol.swift
+/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIEndpoint.swift
+/persistent/workspaces/coder/Modules/CoderKit/Sources/API/APIError.swift
+/persistent/workspaces/coder/Modules/CoderKit/Sources/API/CoderAPIClient.swift
+/persistent/workspaces/coder/Modules/CoderKit/Sources/Models/Workspace.swift
+/persistent/workspaces/coder/Modules/CoderKit/Sources/Models/WorkspaceBuild.swift

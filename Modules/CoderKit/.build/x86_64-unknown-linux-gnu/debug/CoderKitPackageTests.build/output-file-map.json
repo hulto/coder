@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.derived/runner.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.build/runner.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderKit/.build/x86_64-unknown-linux-gnu/debug/CoderKitPackageTests.build/runner.swiftdeps"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.derived/runner.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.build/runner.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.build/runner.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeaturePackageTests.build/runner.swiftdeps"
+  }
+}

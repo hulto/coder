@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Sources/VSCodeWebView.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebView.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebView.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebView~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebView.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Sources/VSCodeWebViewModel.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebViewModel.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebViewModel.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebViewModel~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebViewModel.swiftdeps"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.swiftdeps"
+  }
+}

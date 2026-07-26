@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/TerminalViewTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swiftdeps"
+  }
+}

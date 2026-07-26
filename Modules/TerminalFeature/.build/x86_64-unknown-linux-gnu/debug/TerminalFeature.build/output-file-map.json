@@ -1,0 +1,41 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYTransport.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalView.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalViewModel.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.swiftdeps"
+  }
+}

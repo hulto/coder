@@ -1,0 +1,774 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.xctest",
+      "packagePath" : "/persistent/workspaces/coder/Modules/TerminalFeature",
+      "productName" : "TerminalFeaturePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "TerminalFeaturePackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.TerminalFeature-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYTransport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TerminalFeature",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeature.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "terminalfeature",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeature.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYTransport.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalView.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalViewModel.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TerminalFeaturePackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/TerminalFeatureTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeatureTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TerminalFeaturePackageDiscoveredTests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/TerminalFeatureTests.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "terminalfeature",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/TerminalFeatureTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/TerminalFeatureTests.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TerminalFeaturePackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeatureTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TerminalFeaturePackageTests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageTests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "terminalfeature",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.TerminalFeatureTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/TerminalViewTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeature.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "TerminalFeatureTests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeatureTests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "terminalfeature",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeatureTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift",
+        "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/TerminalViewTests.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "TerminalFeature" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TerminalFeature",
+      "-package-name",
+      "terminalfeature",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYTransport.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalView.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalViewModel.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "terminalfeature",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TerminalFeaturePackageDiscoveredTests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TerminalFeaturePackageDiscoveredTests",
+      "-package-name",
+      "terminalfeature",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/TerminalFeatureTests.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "terminalfeature",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TerminalFeaturePackageTests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TerminalFeaturePackageTests",
+      "-package-name",
+      "terminalfeature",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "terminalfeature",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "TerminalFeatureTests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "TerminalFeatureTests",
+      "-package-name",
+      "terminalfeature",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/TerminalViewTests.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "terminalfeature",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "TerminalFeature" : [
+
+    ],
+    "TerminalFeaturePackageDiscoveredTests" : [
+      "TerminalFeatureTests",
+      "TerminalFeature"
+    ],
+    "TerminalFeaturePackageTests" : [
+      "TerminalFeaturePackageDiscoveredTests",
+      "TerminalFeatureTests",
+      "TerminalFeature"
+    ],
+    "TerminalFeatureTests" : [
+      "TerminalFeature"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/TerminalFeatureTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/Modules/TerminalFeaturePackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYTransport.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/TerminalViewModel.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/TerminalFeatureTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYReconnectPolicy.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYTransport.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalFeature.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/TerminalViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/TerminalFeaturePackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/TerminalFeatureTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/TerminalFeaturePackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalFeatureTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/TerminalViewTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeaturePackageTests.product/Objects.LinkFileList"
+    },
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/TerminalViewTests.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+    }
+  }
+}

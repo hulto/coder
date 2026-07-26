@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VSCodeWebViewTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.swiftdeps"
+  }
+}
