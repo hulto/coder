@@ -140,4 +140,101 @@ struct LoginViewModelTests {
         await viewModel.login()
         #expect(viewModel.errorMessage == "Authentication was cancelled by the user.")
     }
+
+    @Test("isAuthenticated is false on a freshly constructed view model")
+    func isAuthenticatedInitiallyFalse() {
+        let authService = AuthService(
+            webAuthSession: MockWebAuthSessionProvider(),
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        #expect(viewModel.isAuthenticated == false)
+    }
+
+    @Test("isAuthenticated becomes true after a successful login")
+    func isAuthenticatedTrueAfterSuccess() async {
+        let mockWebAuth = MockWebAuthSessionProvider(
+            callbackURL: URL(string: "coder://cli-auth?session_token=test_token_12345678")!
+        )
+        let authService = AuthService(
+            webAuthSession: mockWebAuth,
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        viewModel.serverURL = "https://coder.example.com"
+        await viewModel.login()
+
+        #expect(viewModel.isAuthenticated == true)
+    }
+
+    @Test("isAuthenticated stays false after a failed login")
+    func isAuthenticatedFalseAfterFailure() async {
+        let mockWebAuth = MockWebAuthSessionProvider(
+            error: AuthError.cancelled
+        )
+        let authService = AuthService(
+            webAuthSession: mockWebAuth,
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        viewModel.serverURL = "https://coder.example.com"
+        await viewModel.login()
+
+        #expect(viewModel.isAuthenticated == false)
+        #expect(viewModel.errorMessage == "Authentication was cancelled by the user.")
+    }
+
+    @Test("isAuthenticated stays false when the server URL is empty")
+    func isAuthenticatedFalseForEmptyURL() async {
+        let authService = AuthService(
+            webAuthSession: MockWebAuthSessionProvider(),
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        viewModel.serverURL = ""
+        await viewModel.login()
+
+        #expect(viewModel.isAuthenticated == false)
+    }
+
+    @Test("isAuthenticated stays false when the server URL is invalid")
+    func isAuthenticatedFalseForInvalidURL() async {
+        let authService = AuthService(
+            webAuthSession: MockWebAuthSessionProvider(),
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        viewModel.serverURL = "http://[::1"
+        await viewModel.login()
+
+        #expect(viewModel.isAuthenticated == false)
+    }
+
+    @Test("isAuthenticated resets to false after a subsequent failed login")
+    func isAuthenticatedResetsAfterSuccessThenFailure() async {
+        let mockWebAuth = MockWebAuthSessionProvider(
+            callbackURL: URL(string: "coder://cli-auth?session_token=test_token_12345678")!
+        )
+        let authService = AuthService(
+            webAuthSession: mockWebAuth,
+            keychainStore: InMemoryKeychainStore()
+        )
+        let viewModel = LoginViewModel(authService: authService)
+
+        // First attempt succeeds.
+        viewModel.serverURL = "https://coder.example.com"
+        await viewModel.login()
+        #expect(viewModel.isAuthenticated == true)
+
+        // Flip the mock to fail, then retry.
+        mockWebAuth.configure(error: AuthError.cancelled)
+        await viewModel.login()
+
+        #expect(viewModel.isAuthenticated == false)
+    }
 }

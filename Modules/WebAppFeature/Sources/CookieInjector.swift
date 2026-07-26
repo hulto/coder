@@ -2,6 +2,12 @@
 import Foundation
 import WebKit
 
+/// An error thrown when cookie injection cannot complete.
+public enum CookieInjectionError: Error, Sendable, Equatable {
+    /// The target URL has no host, or does not use HTTPS.
+    case invalidURL
+}
+
 /// Injects authentication cookies into web views for seamless SSO.
 ///
 /// Uses the session token from CoderAuth to set a `coder_session_token`
@@ -35,11 +41,14 @@ public struct CookieInjector: Sendable {
     /// - Parameters:
     ///   - url: The target URL whose domain will receive the cookie.
     ///   - token: The session token value.
-    /// - Returns: The cookie properties dictionary, or nil if the URL has no host.
+    /// - Returns: The cookie properties dictionary, or nil if the URL has no
+    ///   host or does not use HTTPS. A Secure cookie minted for a non-HTTPS
+    ///   URL would be silently refused by WebKit, masking the real failure.
     public static func cookieProperties(
         for url: URL,
         token: String
     ) -> [HTTPCookiePropertyKey: Any]? {
+        guard url.scheme?.lowercased() == "https" else { return nil }
         guard let host = domain(from: url) else { return nil }
         return [
             .name: cookieName,
@@ -48,7 +57,7 @@ public struct CookieInjector: Sendable {
             .path: "/",
             .secure: true,
             HTTPCookiePropertyKey("HttpOnly"): true,
-            HTTPCookiePropertyKey("SameSite"): "None",
+            HTTPCookiePropertyKey("SameSite"): "None"
         ]
     }
 
@@ -72,10 +81,14 @@ public struct CookieInjector: Sendable {
     ///   - webView: The WKWebView to inject the cookie into.
     ///   - url: The target URL whose domain will receive the cookie.
     ///   - token: The session token value.
-    public static func injectCookies(into webView: WKWebView, for url: URL, token: String) async {
+    /// - Throws: `CookieInjectionError.invalidURL` if the target URL has no
+    ///   host or does not use HTTPS. Callers must not proceed to load the
+    ///   URL when this throws, since the session would otherwise load
+    ///   unauthenticated with no user-visible signal of the failure.
+    public static func injectCookies(into webView: WKWebView, for url: URL, token: String) async throws {
         guard let cookie = makeCookie(for: url, token: token) else {
-            print("[CookieInjector] Failed to create cookie – invalid URL")
-            return
+            print("[CookieInjector] Failed to create cookie, invalid URL")
+            throw CookieInjectionError.invalidURL
         }
 
         let cookieStore = webView.configuration.websiteDataStore.httpCookieStore

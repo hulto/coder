@@ -14,6 +14,12 @@
     "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/KeyboardShortcutHandler~partial.swiftmodule",
     "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/KeyboardShortcutHandler.swiftdeps"
   },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Sources/VNCInputConfiguration.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCInputConfiguration.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCInputConfiguration.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCInputConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCInputConfiguration.swiftdeps"
+  },
   "/persistent/workspaces/coder/Modules/WebAppFeature/Sources/VNCWebView.swift": {
     "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCWebView.d",
     "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCWebView.swift.o",

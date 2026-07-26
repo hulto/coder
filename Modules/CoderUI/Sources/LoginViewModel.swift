@@ -19,7 +19,14 @@ public final class LoginViewModel: Sendable {
     
     /// An error message to display to the user, or nil if no error.
     public private(set) var errorMessage: String?
-    
+
+    /// Whether the most recent login attempt succeeded.
+    ///
+    /// Callers observe this to know when to navigate past the login screen.
+    /// It resets to `false` at the start of every `login()` call so a retry
+    /// after a prior success cannot leave a stale `true`.
+    public private(set) var isAuthenticated: Bool = false
+
     private let authService: AuthService
     
     /// Creates a new login view model.
@@ -39,9 +46,10 @@ public final class LoginViewModel: Sendable {
     ///
     /// - Throws: Re-throws errors from AuthService for caller handling.
     public func login() async {
-        // Clear previous error
+        // Clear previous error and authentication state
         errorMessage = nil
-        
+        isAuthenticated = false
+
         // Validate input
         let trimmedURL = serverURL.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedURL.isEmpty else {
@@ -62,10 +70,9 @@ public final class LoginViewModel: Sendable {
             // Attempt authentication
             _ = try await authService.authenticate(serverURL: url)
             
-            // Success - clear loading state
+            // Success - clear loading state and mark authenticated
             isLoading = false
-            
-            // Note: Navigation or success callback would be handled by the view
+            isAuthenticated = true
         } catch {
             // Handle error
             isLoading = false

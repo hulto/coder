@@ -3,6 +3,10 @@ import Testing
 
 @testable import WebAppFeature
 
+#if canImport(WebKit)
+import WebKit
+#endif
+
 @Suite("VNC Cookie Injection Tests")
 struct VNCCookieInjectionTests {
 
@@ -78,6 +82,77 @@ struct VNCCookieInjectionTests {
 
         #expect(CookieInjector.domain(from: url1) == "vnc.example.com")
         #expect(CookieInjector.domain(from: url2) == "vnc.sub.example.org")
+    }
+
+    @Test("CookieInjector returns nil for non-HTTPS URL")
+    func cookieInjectorRejectsNonHTTPS() {
+        let url = URL(string: "http://vnc.example.com")!
+        let cookie = CookieInjector.makeCookie(for: url, token: "test-token")
+
+        #expect(cookie == nil)
+    }
+
+    @Test("injectCookies stores the session cookie for a VNC URL")
+    @MainActor
+    func injectCookiesStoresSessionCookie() async throws {
+        let webView = WKWebView()
+        let url = URL(string: "https://vnc.example.com/path")!
+        let token = "test-vnc-session-token"
+
+        try await CookieInjector.injectCookies(into: webView, for: url, token: token)
+
+        let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
+        let sessionCookie = cookies.first { $0.name == CookieInjector.cookieName }
+
+        #expect(sessionCookie != nil)
+        #expect(sessionCookie?.value == token)
+        #expect(sessionCookie?.domain == "vnc.example.com")
+    }
+
+    @Test("injectCookies throws for invalid URL and stores no cookie")
+    @MainActor
+    func injectCookiesThrowsForInvalidURL() async {
+        let webView = WKWebView()
+        let url = URL(string: "http://vnc.example.com")!
+
+        await #expect(throws: CookieInjectionError.self) {
+            try await CookieInjector.injectCookies(into: webView, for: url, token: "test-token")
+        }
+
+        let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
+        #expect(cookies.isEmpty)
+    }
+
+    @Test("Injection completes before load is triggered")
+    @MainActor
+    func injectionPrecedesLoad() async throws {
+        // Exercises the ordering contract that VNCWebView.makeUIView relies
+        // on: injectCookies() must fully complete (cookie visible in the
+        // store) before any navigation request is issued. We simulate the
+        // call site's sequencing directly, since UIViewRepresentable.
+        // makeUIView cannot be invoked outside of SwiftUI rendering.
+        let webView = WKWebView()
+        let url = URL(string: "https://vnc.example.com")!
+        let token = "ordering-test-token"
+
+        try await CookieInjector.injectCookies(into: webView, for: url, token: token)
+
+        // At this point (post-await, pre-load) the cookie must already be
+        // visible in the store, matching the sequencing the call site
+        // depends on to load an authenticated session.
+        let cookies = await webView.configuration.websiteDataStore.httpCookieStore.allCookies()
+        let injectedBeforeLoad = cookies.contains { $0.name == CookieInjector.cookieName }
+
+        #expect(injectedBeforeLoad)
+    }
+
+    @Test("VNCWebView can be created with a URL and token")
+    @MainActor
+    func viewCreationWithToken() {
+        let url = URL(string: "https://vnc.example.com")!
+        let view = VNCWebView(url: url, token: "test-token")
+        // View was successfully constructed; body is non-optional so no nil check needed.
+        _ = view.body
     }
 #endif
 }

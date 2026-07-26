@@ -53,7 +53,12 @@ private struct WebViewRepresentable: UIViewRepresentable {
 
         if let token = viewModel.token {
             Task { @MainActor in
-                await CookieInjector.injectCookies(into: webView, for: viewModel.url, token: token)
+                do {
+                    try await CookieInjector.injectCookies(into: webView, for: viewModel.url, token: token)
+                } catch {
+                    viewModel.handleNavigationError(error)
+                    return
+                }
                 let request = URLRequest(url: viewModel.url)
                 webView.load(request)
             }

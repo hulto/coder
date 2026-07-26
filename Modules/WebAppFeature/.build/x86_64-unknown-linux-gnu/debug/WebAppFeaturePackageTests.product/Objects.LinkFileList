@@ -1,5 +1,6 @@
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/CookieInjector.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/KeyboardShortcutHandler.swift.o
+/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCInputConfiguration.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCWebView.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VNCWebViewModel.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeature.build/VSCodeWebView.swift.o
@@ -13,6 +14,7 @@
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/CookieInjectorTests.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/KeyboardShortcutHandlerTests.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests.swift.o
+/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCInputTests.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.swift.o
 /persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/WebAppFeatureTests.swiftmodule.o

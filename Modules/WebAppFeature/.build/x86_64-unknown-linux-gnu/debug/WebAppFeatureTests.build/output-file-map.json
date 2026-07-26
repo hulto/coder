@@ -20,6 +20,12 @@
     "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests~partial.swiftmodule",
     "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests.swiftdeps"
   },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VNCInputTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCInputTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCInputTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCInputTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCInputTests.swiftdeps"
+  },
   "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VNCWebViewTests.swift": {
     "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.d",
     "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.swift.o",

@@ -10,7 +10,7 @@ import Observation
 /// integration is handled by the SwiftUI view layer.
 @MainActor
 @Observable
-final class VNCWebViewModel: @unchecked Sendable {
+final class VNCWebViewModel {
     /// Current error message to display, if any.
     private(set) var errorMessage: String?
 
@@ -27,6 +27,12 @@ final class VNCWebViewModel: @unchecked Sendable {
     /// Weak reference to the WKWebView for cleanup.
     weak var webView: WKWebView?
     #endif
+
+    /// Handle to the in-flight cookie-injection task, if any.
+    ///
+    /// Stored so `cleanup()` can cancel it, preventing a dismissed view from
+    /// injecting a token and starting a load after teardown.
+    var injectionTask: Task<Void, Never>?
 
     /// Creates a view model for the given VNC URL.
     /// - Parameters:
@@ -68,6 +74,8 @@ final class VNCWebViewModel: @unchecked Sendable {
 
     /// Cleans up the web view by stopping loading and removing the navigation delegate.
     func cleanup() {
+        injectionTask?.cancel()
+        injectionTask = nil
         #if canImport(WebKit)
         webView?.stopLoading()
         webView?.navigationDelegate = nil
