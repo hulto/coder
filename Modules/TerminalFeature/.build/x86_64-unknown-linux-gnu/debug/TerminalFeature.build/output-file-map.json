@@ -2,6 +2,18 @@
   "": {
     "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/master.swiftdeps"
   },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/KeyboardAccessoryBar.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryBar.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryBar.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryBar~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryBar.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/KeyboardAccessoryViewModel.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryViewModel.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryViewModel.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryViewModel~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/KeyboardAccessoryViewModel.swiftdeps"
+  },
   "/persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift": {
     "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.d",
     "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeature.build/PTYClient.swift.o",

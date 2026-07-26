@@ -2,6 +2,30 @@
   "": {
     "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/master.swiftdeps"
   },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/CookieInjectorTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/CookieInjectorTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/CookieInjectorTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/CookieInjectorTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/CookieInjectorTests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/KeyboardShortcutHandlerTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/KeyboardShortcutHandlerTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/KeyboardShortcutHandlerTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/KeyboardShortcutHandlerTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/KeyboardShortcutHandlerTests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VNCCookieInjectionTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCCookieInjectionTests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VNCWebViewTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.d",
+    "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VNCWebViewTests.swiftdeps"
+  },
   "/persistent/workspaces/coder/Modules/WebAppFeature/Tests/VSCodeWebViewTests.swift": {
     "dependencies": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.d",
     "object": "/persistent/workspaces/coder/Modules/WebAppFeature/.build/x86_64-unknown-linux-gnu/debug/WebAppFeatureTests.build/VSCodeWebViewTests.swift.o",

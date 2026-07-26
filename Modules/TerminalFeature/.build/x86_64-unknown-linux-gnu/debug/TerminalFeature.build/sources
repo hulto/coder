@@ -1,3 +1,5 @@
+/persistent/workspaces/coder/Modules/TerminalFeature/Sources/KeyboardAccessoryBar.swift
+/persistent/workspaces/coder/Modules/TerminalFeature/Sources/KeyboardAccessoryViewModel.swift
 /persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYClient.swift
 /persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYReconnectPolicy.swift
 /persistent/workspaces/coder/Modules/TerminalFeature/Sources/PTYSession.swift

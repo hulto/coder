@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ArgumentParserToolInfo-tool.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ArgumentParserToolInfo-tool.build/ToolInfo.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ArgumentParserToolInfo-tool.build/ToolInfo.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ArgumentParserToolInfo-tool.build/ToolInfo~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/ArgumentParserToolInfo-tool.build/ToolInfo.swiftdeps"
+  }
+}

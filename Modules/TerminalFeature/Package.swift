@@ -7,11 +7,11 @@ let package = Package(
         .iOS(.v17),
         .macOS(.v14),
     ],
-    dependencies: [
-        .package(url: "https://github.com/migueldeicaza/SwiftTerm", from: "1.0.0"),
-    ],
     products: [
         .library(name: "TerminalFeature", targets: ["TerminalFeature"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/migueldeicaza/SwiftTerm", from: "1.0.0"),
     ],
     targets: [
         .target(

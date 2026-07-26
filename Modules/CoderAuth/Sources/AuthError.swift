@@ -25,6 +25,9 @@ public enum AuthError: Error, Sendable, Equatable {
     /// No stored session token was found in the keychain.
     case noStoredToken
 
+    /// The web authentication session encountered an error.
+    case sessionError(String)
+
     /// Biometric authentication was not available on this device.
     case biometricNotAvailable
 
@@ -51,6 +54,8 @@ extension AuthError: CustomStringConvertible {
             return "Keychain error (status: \(statusCode))."
         case .noStoredToken:
             return "No stored session credential found."
+        case .sessionError(let message):
+            return "Authentication session error: \(message)"
         case .biometricNotAvailable:
             return "Biometric authentication is not available on this device."
         case .biometricFailed:

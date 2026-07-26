@@ -1,0 +1,901 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.xctest",
+      "packagePath" : "/persistent/workspaces/coder/Modules/CoderUI",
+      "productName" : "CoderUIPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "CoderUIPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.CoderAuth-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CoderAuth",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-strict-concurrency=complete",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "coderauth",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift",
+        "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift",
+        "/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift",
+        "/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift",
+        "/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CoderUI-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CoderUI",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-strict-concurrency=complete",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "coderui",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift",
+        "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CoderUIPackageDiscoveredTests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-strict-concurrency=complete",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "coderui",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CoderUIPackageTests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-g",
+        "-strict-concurrency=complete",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "coderui",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.CoderUITests-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "fileList" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources",
+      "importPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "CoderUITests",
+      "moduleOutputPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule",
+      "objects" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-g",
+        "-strict-concurrency=complete",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "coderui",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift"
+      ],
+      "tempsPath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "CoderAuth" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CoderAuth",
+      "-package-name",
+      "coderauth",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift",
+      "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift",
+      "/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift",
+      "/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift",
+      "/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-strict-concurrency=complete",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "coderauth",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CoderUI" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CoderUI",
+      "-package-name",
+      "coderui",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift",
+      "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-strict-concurrency=complete",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "coderui",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CoderUIPackageDiscoveredTests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CoderUIPackageDiscoveredTests",
+      "-package-name",
+      "coderui",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-strict-concurrency=complete",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "coderui",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CoderUIPackageTests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CoderUIPackageTests",
+      "-package-name",
+      "coderui",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-g",
+      "-strict-concurrency=complete",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "coderui",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ],
+    "CoderUITests" : [
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc",
+      "-module-name",
+      "CoderUITests",
+      "-package-name",
+      "coderui",
+      "-incremental",
+      "-c",
+      "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift",
+      "-I",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-g",
+      "-strict-concurrency=complete",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "coderui",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "CoderAuth" : [
+
+    ],
+    "CoderUI" : [
+      "CoderAuth"
+    ],
+    "CoderUIPackageDiscoveredTests" : [
+      "CoderUITests",
+      "CoderUI",
+      "CoderAuth"
+    ],
+    "CoderUIPackageTests" : [
+      "CoderUIPackageDiscoveredTests",
+      "CoderUITests",
+      "CoderUI",
+      "CoderAuth"
+    ],
+    "CoderUITests" : [
+      "CoderUI",
+      "CoderAuth"
+    ]
+  },
+  "testDiscoveryCommands" : {
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ]
+    }
+  },
+  "testEntryPointCommands" : {
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources"
+    },
+    "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+    }
+  }
+}

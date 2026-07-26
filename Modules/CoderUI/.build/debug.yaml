@@ -1,0 +1,190 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CoderAuth-x86_64-unknown-linux-gnu-debug.module": ["<CoderAuth-x86_64-unknown-linux-gnu-debug.module>"]
+  "CoderUI-x86_64-unknown-linux-gnu-debug.module": ["<CoderUI-x86_64-unknown-linux-gnu-debug.module>"]
+  "CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module": ["<CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module>"]
+  "CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module": ["<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module>"]
+  "CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test": ["<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test>"]
+  "CoderUITests-x86_64-unknown-linux-gnu-debug.module": ["<CoderUITests-x86_64-unknown-linux-gnu-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<CoderUI-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<CoderUI-x86_64-unknown-linux-gnu-debug.module>","<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test>","<CoderUITests-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/persistent/workspaces/coder/Modules/CoderUI/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o"]
+    description: "Wrapping AST for CoderAuth for debugging"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-modulewrap","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o"]
+    description: "Wrapping AST for CoderUI for debugging"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-modulewrap","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift","/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o"]
+    description: "Wrapping AST for CoderUIPackageDiscoveredTests for debugging"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-modulewrap","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift":
+    tool: test-discovery-tool
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o"]
+    description: "Wrapping AST for CoderUIPackageTests for debugging"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-modulewrap","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o"]
+    description: "Wrapping AST for CoderUITests for debugging"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-modulewrap","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources"]
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources"
+
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt"
+
+  "<CoderAuth-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule"]
+    outputs: ["<CoderAuth-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<CoderUI-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule"]
+    outputs: ["<CoderUI-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"]
+    outputs: ["<CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule"]
+    outputs: ["<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.xctest"]
+    outputs: ["<CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test>"]
+
+  "<CoderUITests-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"]
+    outputs: ["<CoderUITests-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.CoderAuth-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift","/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule"]
+    description: "Compiling Swift Module 'CoderAuth' (5 sources)"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-module-name","CoderAuth","-emit-dependencies","-emit-module","-emit-module-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule","-output-file-map","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/output-file-map.json","-parse-as-library","-incremental","-c","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/sources","-I","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-g","-strict-concurrency=complete","-Xcc","-fPIC","-Xcc","-g","-package-name","coderauth","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.CoderUI-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift","/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderAuth.swiftmodule","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule"]
+    description: "Compiling Swift Module 'CoderUI' (2 sources)"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-module-name","CoderUI","-emit-dependencies","-emit-module","-emit-module-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule","-output-file-map","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/output-file-map.json","-parse-as-library","-incremental","-c","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/sources","-I","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-g","-strict-concurrency=complete","-Xcc","-fPIC","-Xcc","-g","-package-name","coderui","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.CoderUIPackageDiscoveredTests-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule"]
+    description: "Compiling Swift Module 'CoderUIPackageDiscoveredTests' (2 sources)"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-module-name","CoderUIPackageDiscoveredTests","-emit-dependencies","-emit-module","-emit-module-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule","-output-file-map","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/sources","-I","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-g","-strict-concurrency=complete","-Xcc","-fPIC","-Xcc","-g","-package-name","coderui","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageDiscoveredTests.swiftmodule","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'CoderUIPackageTests' (1 sources)"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-module-name","CoderUIPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUIPackageTests.swiftmodule","-output-file-map","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/sources","-I","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-g","-strict-concurrency=complete","-Xcc","-fPIC","-Xcc","-g","-package-name","coderui","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.CoderUIPackageTests-x86_64-unknown-linux-gnu-debug.test":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/CoderAuth.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/CoderUI.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUIPackageDiscoveredTests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/CoderUIPackageTests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/CoderUITests.swiftmodule.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.xctest"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.xctest"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-L","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug","-o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.xctest","-module-name","CoderUIPackageTests","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-g","-strict-concurrency=complete"]
+
+  "C.CoderUITests-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/swift-version--19B82002E0740327.txt","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUI.swiftmodule","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources"]
+    outputs: ["/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule"]
+    description: "Compiling Swift Module 'CoderUITests' (1 sources)"
+    args: ["/opt/swift-6.0.3-RELEASE-ubuntu24.04/usr/bin/swiftc","-module-name","CoderUITests","-emit-dependencies","-emit-module","-emit-module-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules/CoderUITests.swiftmodule","-output-file-map","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/sources","-I","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-enable-batch-mode","-index-store-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","6","-g","-strict-concurrency=complete","-Xcc","-fPIC","-Xcc","-g","-package-name","coderui","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/persistent/workspaces/coder/Modules/CoderUI/Sources/","/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/","/persistent/workspaces/coder/Modules/CoderUI/Package.swift","/persistent/workspaces/coder/Modules/CoderUI/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

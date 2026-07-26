@@ -1,0 +1,5 @@
+/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift
+/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift
+/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift
+/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift
+/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift

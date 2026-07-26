@@ -1,0 +1,185 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/AuthorArgument.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/AuthorArgument.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/AuthorArgument.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/AuthorArgument~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/AuthorArgument.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/ArgumentSynopsis.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentSynopsis.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentSynopsis.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentSynopsis~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentSynopsis.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Author.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Author.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Author.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Author~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Author.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Authors.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Authors.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Authors.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Authors~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Authors.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/Container.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Container.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Container.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Container~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Container.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/Empty.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Empty.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Empty.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Empty~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Empty.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/ForEach.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ForEach.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ForEach.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ForEach~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ForEach.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/MDocASTNodeWrapper.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNodeWrapper.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNodeWrapper.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNodeWrapper~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNodeWrapper.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/MDocBuilder.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocBuilder.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocBuilder.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocBuilder~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocBuilder.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Core/MDocComponent.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocComponent.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocComponent.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocComponent~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocComponent.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Discussion.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Discussion.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Discussion.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Discussion~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Discussion.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Document.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Document.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Document.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Document~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Document.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/DocumentDate.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/DocumentDate.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/DocumentDate.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/DocumentDate~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/DocumentDate.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Exit.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Exit.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Exit.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Exit~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Exit.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/List.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/List.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/List.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/List~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/List.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/MultiPageDescription.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MultiPageDescription.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MultiPageDescription.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MultiPageDescription~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MultiPageDescription.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Name.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Name.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Name.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Name~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Name.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Preamble.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Preamble.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Preamble.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Preamble~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Preamble.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Section.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Section.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Section.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Section~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Section.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/SeeAlso.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SeeAlso.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SeeAlso.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SeeAlso~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SeeAlso.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/SinglePageDescription.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SinglePageDescription.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SinglePageDescription.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SinglePageDescription~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/SinglePageDescription.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/DSL/Synopsis.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Synopsis.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Synopsis.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Synopsis~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Synopsis.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/Extensions/ArgumentParser+MDoc.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentParser+MDoc.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentParser+MDoc.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentParser+MDoc~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/ArgumentParser+MDoc.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/Extensions/Date+ExpressibleByArgument.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Date+ExpressibleByArgument.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Date+ExpressibleByArgument.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Date+ExpressibleByArgument~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Date+ExpressibleByArgument.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/Extensions/Process+SimpleAPI.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Process+SimpleAPI.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Process+SimpleAPI.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Process+SimpleAPI~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/Process+SimpleAPI.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/GenerateManual.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/GenerateManual.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/GenerateManual.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/GenerateManual~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/GenerateManual.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/MDoc/MDocASTNode.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNode.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNode.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNode~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocASTNode.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/MDoc/MDocMacro.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocMacro.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocMacro.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocMacro~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocMacro.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/MDoc/MDocSerializationContext.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocSerializationContext.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocSerializationContext.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocSerializationContext~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/MDocSerializationContext.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/.build/checkouts/swift-argument-parser/Tools/generate-manual/MDoc/String+Escaping.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/String+Escaping.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/String+Escaping.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/String+Escaping~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/generate_manual.build/String+Escaping.swiftdeps"
+  }
+}

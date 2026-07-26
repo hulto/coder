@@ -2,6 +2,12 @@
   "": {
     "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/master.swiftdeps"
   },
+  "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/KeyboardAccessoryBarTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/KeyboardAccessoryBarTests.d",
+    "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/KeyboardAccessoryBarTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/KeyboardAccessoryBarTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/KeyboardAccessoryBarTests.swiftdeps"
+  },
   "/persistent/workspaces/coder/Modules/TerminalFeature/Tests/PTYClientTests.swift": {
     "dependencies": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.d",
     "object": "/persistent/workspaces/coder/Modules/TerminalFeature/.build/x86_64-unknown-linux-gnu/debug/TerminalFeatureTests.build/PTYClientTests.swift.o",

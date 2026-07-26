@@ -1,0 +1,57 @@
+---
+id: TASK-011
+title: VS Code Web WKWebView host (WebAppFeature)
+phase: 3
+module: WebAppFeature
+depends_on: []
+blocks: [TASK-012]
+parallel_safe_with: []
+context_budget_tokens: 60000
+worktree: wt/task-011-vscode-webview
+---
+
+## Goal
+Create a WKWebView-based host for VS Code Web that loads the VS Code Web subdomain app URL and handles basic navigation. This is the foundation for embedding VS Code Web in the iOS app.
+
+## In scope (files this task MAY create/modify)
+- Sources/WebAppFeature/VSCodeWebView.swift (new)
+- Sources/WebAppFeature/VSCodeWebViewModel.swift (new)
+- Tests/WebAppFeatureTests/VSCodeWebViewTests.swift (new)
+
+## Explicitly OUT of scope (do NOT touch)
+- Any .xcodeproj / project.yml / Package.swift target wiring
+- Cookie injection (TASK-012)
+- Keyboard shortcuts or focus management (future task)
+- CoderKit or CoderAuth modules
+
+## Contracts / interfaces it MUST honor
+- Public surface MUST be:
+  ```swift
+  public struct VSCodeWebView: View {
+      public init(url: URL)
+  }
+  ```
+- View must be Sendable
+- Must use WKWebView via UIViewRepresentable
+- Must handle basic navigation (load URL, handle navigation failures)
+
+## Acceptance criteria (each must be machine- or reviewer-verifiable)
+1. Compiles under Swift 6 strict concurrency (complete) with zero warnings.
+2. Displays WKWebView loading the provided URL.
+3. Handles navigation failures gracefully (shows error message).
+4. Properly cleans up WKWebView on view disappearance.
+5. Unit tests verify view creation and basic functionality.
+6. No secrets logged or exposed.
+
+## Test requirements
+- Swift Testing (`@Test`)
+- Mock WKWebView navigation for testing
+- Cover: view creation, URL loading, navigation failure handling
+
+## Definition of Done (all must be TRUE)
+- [ ] `swift build --package-path Modules/WebAppFeature -Xswiftc -strict-concurrency=complete` clean
+- [ ] `swift test --package-path Modules/WebAppFeature` green
+- [ ] `swiftlint lint --strict Modules/WebAppFeature` clean
+- [ ] `swift-format lint -r Modules/WebAppFeature` clean
+- [ ] Diff touches only in-scope files
+- [ ] Returns: summary (≤300 words) + full diff + gate command outputs

@@ -46,6 +46,9 @@ import AuthenticationServices
 /// This is the production implementation used on iOS/macOS.
 @available(iOS 17.0, macOS 14.0, *)
 public final class ASWebAuthSessionProvider: WebAuthSessionProviding, Sendable {
+    /// Thread-safe storage for the current session to prevent premature deallocation.
+    @MainActor private static var currentSession: ASWebAuthenticationSession?
+
     public init() {}
 
     public func authenticate(url: URL, callbackScheme: String) async throws -> URL {
@@ -57,6 +60,11 @@ public final class ASWebAuthSessionProvider: WebAuthSessionProviding, Sendable {
                     url: url,
                     callbackURLScheme: callbackScheme
                 ) { callbackURL, error in
+                    // Release the retained session now that the callback has fired.
+                    Task { @MainActor in
+                        ASWebAuthSessionProvider.currentSession = nil
+                    }
+
                     if let error = error as? ASWebAuthenticationSessionError {
                         switch error.code {
                         case .canceledLogin:
@@ -81,6 +89,9 @@ public final class ASWebAuthSessionProvider: WebAuthSessionProviding, Sendable {
                 }
 
                 session.prefersEphemeralWebBrowserSession = true
+                // Retain the session as a class property so it is not deallocated
+                // before the callback fires.
+                ASWebAuthSessionProvider.currentSession = session
                 session.start()
             }
         }

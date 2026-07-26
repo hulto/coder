@@ -20,15 +20,21 @@ public final class VSCodeWebViewModel: @unchecked Sendable {
     /// The URL being loaded.
     public let url: URL
 
+    /// Optional session token for cookie injection.
+    public let token: String?
+
     #if canImport(WebKit)
     /// Weak reference to the WKWebView for cleanup.
     weak var webView: WKWebView?
     #endif
 
     /// Creates a view model for the given VS Code Web URL.
-    /// - Parameter url: The URL to load in the web view.
-    public init(url: URL) {
+    /// - Parameters:
+    ///   - url: The URL to load in the web view.
+    ///   - token: Optional session token for cookie injection.
+    public init(url: URL, token: String? = nil) {
         self.url = url
+        self.token = token
     }
 
     /// Called when navigation begins.

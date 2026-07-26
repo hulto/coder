@@ -8,11 +8,16 @@ import WebKit
 /// by displaying an error message. Cleans up the WKWebView on disappearance.
 public struct VSCodeWebView: View {
     @State private var viewModel: VSCodeWebViewModel
+    private let onShortcut: (@Sendable (KeyboardShortcut) -> Void)?
 
     /// Creates a VS Code Web view for the given URL.
-    /// - Parameter url: The VS Code Web subdomain app URL to load.
-    public init(url: URL) {
-        _viewModel = State(initialValue: VSCodeWebViewModel(url: url))
+    /// - Parameters:
+    ///   - url: The VS Code Web subdomain app URL to load.
+    ///   - token: Optional session token for cookie injection.
+    ///   - onShortcut: Optional callback for hardware keyboard shortcuts.
+    public init(url: URL, token: String? = nil, onShortcut: (@Sendable (KeyboardShortcut) -> Void)? = nil) {
+        _viewModel = State(initialValue: VSCodeWebViewModel(url: url, token: token))
+        self.onShortcut = onShortcut
     }
 
     public var body: some View {
@@ -23,7 +28,7 @@ public struct VSCodeWebView: View {
                     viewModel.navigationDidStart()
                 }
             } else {
-                WebViewRepresentable(viewModel: viewModel)
+                WebViewRepresentable(viewModel: viewModel, onShortcut: onShortcut)
             }
         }
         .onDisappear {
@@ -35,16 +40,27 @@ public struct VSCodeWebView: View {
 /// UIViewRepresentable wrapping WKWebView with navigation delegate support.
 private struct WebViewRepresentable: UIViewRepresentable {
     let viewModel: VSCodeWebViewModel
+    let onShortcut: (@Sendable (KeyboardShortcut) -> Void)?
 
     func makeUIView(context: Context) -> WKWebView {
-        let webView = WKWebView()
+        let webView = ShortcutCapturingWebView()
+        webView.onShortcut = onShortcut
         webView.navigationDelegate = context.coordinator
         context.coordinator.webView = webView
         viewModel.webView = webView
 
         viewModel.navigationDidStart()
-        let request = URLRequest(url: viewModel.url)
-        webView.load(request)
+
+        if let token = viewModel.token {
+            Task { @MainActor in
+                await CookieInjector.injectCookies(into: webView, for: viewModel.url, token: token)
+                let request = URLRequest(url: viewModel.url)
+                webView.load(request)
+            }
+        } else {
+            let request = URLRequest(url: viewModel.url)
+            webView.load(request)
+        }
 
         return webView
     }

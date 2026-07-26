@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.derived/runner.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageTests.build/runner.swiftdeps"
+  }
+}

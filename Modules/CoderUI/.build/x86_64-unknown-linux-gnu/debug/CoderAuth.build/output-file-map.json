@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthError.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthError.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderAuth/Sources/AuthService.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/AuthService.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderAuth/Sources/BiometricAuth.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/BiometricAuth.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderAuth/Sources/KeychainManager.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/KeychainManager.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderAuth/Sources/WebAuthSession.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderAuth.build/WebAuthSession.swiftdeps"
+  }
+}

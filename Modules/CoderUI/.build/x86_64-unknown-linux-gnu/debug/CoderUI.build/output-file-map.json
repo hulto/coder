@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginView.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginView.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/Sources/LoginViewModel.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUI.build/LoginViewModel.swiftdeps"
+  }
+}

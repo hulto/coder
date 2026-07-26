@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "coderauth",
+          "kind" : "fileSystem",
+          "location" : "/persistent/workspaces/coder/Modules/CoderAuth",
+          "name" : "CoderAuth"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/persistent/workspaces/coder/Modules/CoderAuth"
+        },
+        "subpath" : "coderauth"
+      }
+    ]
+  },
+  "version" : 6
+}

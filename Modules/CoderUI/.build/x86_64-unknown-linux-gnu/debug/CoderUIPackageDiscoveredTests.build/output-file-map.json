@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/CoderUITests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/CoderUITests.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.derived/all-discovered-tests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUIPackageDiscoveredTests.build/all-discovered-tests.swiftdeps"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/master.swiftdeps"
+  },
+  "/persistent/workspaces/coder/Modules/CoderUI/Tests/CoderUITests/LoginViewModelTests.swift": {
+    "dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.d",
+    "object": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swift.o",
+    "swiftmodule": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests~partial.swiftmodule",
+    "swift-dependencies": "/persistent/workspaces/coder/Modules/CoderUI/.build/x86_64-unknown-linux-gnu/debug/CoderUITests.build/LoginViewModelTests.swiftdeps"
+  }
+}

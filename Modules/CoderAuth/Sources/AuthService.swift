@@ -85,7 +85,10 @@ public actor AuthService {
         )
 
         // Extract token from callback URL
-        let token = try extractToken(from: callbackURL)
+        let rawToken = try extractToken(from: callbackURL)
+
+        // Trim whitespace before validation and storage
+        let token = rawToken.trimmingCharacters(in: .whitespacesAndNewlines)
 
         // Validate token format
         try validateToken(token)
@@ -167,9 +170,9 @@ public actor AuthService {
     /// Validates the session token format before storage.
     ///
     /// Rejects empty tokens and tokens shorter than 8 characters.
+    /// The caller is responsible for trimming whitespace before calling this method.
     nonisolated private func validateToken(_ token: String) throws {
-        let trimmed = token.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty, trimmed.count >= 8 else {
+        guard !token.isEmpty, token.count >= 8 else {
             throw AuthError.invalidTokenFormat
         }
     }

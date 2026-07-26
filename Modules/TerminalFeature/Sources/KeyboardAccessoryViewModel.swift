@@ -54,6 +54,9 @@ enum TerminalKeySequences: Sendable {
 
 #if canImport(Observation)
 import Observation
+#if canImport(os)
+import os
+#endif
 
 /// View model managing keyboard accessory bar state and key sequence delivery.
 ///
@@ -75,10 +78,22 @@ final class KeyboardAccessoryViewModel {
         self.session = session
     }
 
+    private func logSendError(_ error: Error) {
+        #if canImport(os)
+        os_log(.error, "Failed to send keyboard input: %{public}@", String(describing: error))
+        #endif
+    }
+
     /// Sends the Escape byte (0x1B) to the session.
     func sendEsc() {
         let data = TerminalKeySequences.escapeSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Toggles control mode on or off.
@@ -89,31 +104,61 @@ final class KeyboardAccessoryViewModel {
     /// Sends the Tab character (0x09) to the session.
     func sendTab() {
         let data = TerminalKeySequences.tabSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Sends the up-arrow ANSI sequence (ESC[A).
     func sendUpArrow() {
         let data = TerminalKeySequences.upArrowSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Sends the down-arrow ANSI sequence (ESC[B).
     func sendDownArrow() {
         let data = TerminalKeySequences.downArrowSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Sends the right-arrow ANSI sequence (ESC[C).
     func sendRightArrow() {
         let data = TerminalKeySequences.rightArrowSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Sends the left-arrow ANSI sequence (ESC[D).
     func sendLeftArrow() {
         let data = TerminalKeySequences.leftArrowSequence()
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 
     /// Sends a key, dispatching to the control-character path when
@@ -124,7 +169,13 @@ final class KeyboardAccessoryViewModel {
             guard let data = TerminalKeySequences.controlCharacter(for: character) else {
                 return
             }
-            Task { try? await session.send(data) }
+            Task {
+                do {
+                    try await session.send(data)
+                } catch {
+                    logSendError(error)
+                }
+            }
         }
     }
 
@@ -134,7 +185,13 @@ final class KeyboardAccessoryViewModel {
         guard let data = TerminalKeySequences.controlCharacter(for: letter) else {
             return
         }
-        Task { try? await session.send(data) }
+        Task {
+            do {
+                try await session.send(data)
+            } catch {
+                logSendError(error)
+            }
+        }
     }
 }
 #endif
