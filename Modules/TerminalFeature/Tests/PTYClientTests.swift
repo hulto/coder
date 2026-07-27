@@ -239,18 +239,15 @@ struct PTYClientTests {
         await client.start()
 
         // Collect output
-        var receivedOutput: [Data] = []
         let stream = await client.output
-        let outputTask = Task {
+        let receivedOutput: [Data] = await Task {
+            var output: [Data] = []
             for await data in stream {
-                receivedOutput.append(data)
-                if receivedOutput.count == 2 {
-                    break
-                }
+                output.append(data)
+                if output.count == 2 { break }
             }
-        }
-
-        await outputTask.value
+            return output
+        }.value
 
         #expect(receivedOutput.count == 2)
         #expect(String(data: receivedOutput[0], encoding: .utf8) == "Welcome to Coder!\n")

@@ -19,46 +19,47 @@ final class TerminalViewModel {
     private weak var terminalView: SwiftTerm.TerminalView?
     private var outputTask: Task<Void, Never>?
     private var isRunning = false
-    
-    /// Current terminal dimensions in characters
+
+    /// Current terminal dimensions in characters.
+    /// The rows value is read by SwiftTermView.sizeThatFits to compute cellHeight.
     private(set) var cols: Int = 80
     private(set) var rows: Int = 24
-    
+
     init(session: any PTYSession) {
         self.session = session
     }
-    
+
     /// Attaches a SwiftTerm TerminalView to this view model.
     func attachTerminal(_ terminalView: SwiftTerm.TerminalView) {
         self.terminalView = terminalView
     }
-    
+
     /// Starts the terminal session and begins processing output.
     func start() {
         guard !isRunning else { return }
         isRunning = true
-        
+
         outputTask = Task { [weak self] in
             guard let self = self else { return }
-            
+
             for await data in self.session.output {
                 await MainActor.run {
-                    self.terminalView?.feed(data: data)
+                    self.terminalView?.feed(byteArray: ArraySlice(data))
                 }
             }
         }
     }
-    
+
     /// Stops the terminal session and cleans up resources.
     func stop() {
         guard isRunning else { return }
         isRunning = false
-        
+
         outputTask?.cancel()
         outputTask = nil
         terminalView = nil
     }
-    
+
     /// Sends input data to the terminal session.
     func sendInput(_ data: Data) {
         Task {
@@ -69,38 +70,14 @@ final class TerminalViewModel {
             }
         }
     }
-    
-    /// Handles container size changes and updates terminal dimensions.
-    func handleResize(containerSize: CGSize) {
-        // Estimate character dimensions based on container size
-        // Typical terminal character is ~7x14 pixels
-        let charWidth = 7.0
-        let charHeight = 14.0
-        
-        let newCols = max(1, Int(containerSize.width / charWidth))
-        let newRows = max(1, Int(containerSize.height / charHeight))
-        
-        guard newCols != cols || newRows != rows else { return }
-        
-        cols = newCols
-        rows = newRows
-        
-        Task {
-            do {
-                try await session.resize(cols: cols, rows: rows)
-            } catch {
-                os_log(.error, "Failed to resize session: %{public}@", error.localizedDescription)
-            }
-        }
-    }
-    
+
     /// Handles terminal resize events from SwiftTerm.
     func handleTerminalResize(cols: Int, rows: Int) {
         guard cols != self.cols || rows != self.rows else { return }
-        
+
         self.cols = cols
         self.rows = rows
-        
+
         Task {
             do {
                 try await session.resize(cols: cols, rows: rows)

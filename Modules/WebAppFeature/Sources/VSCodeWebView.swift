@@ -1,5 +1,6 @@
 #if canImport(WebKit)
 import SwiftUI
+import UIKit
 import WebKit
 
 /// A SwiftUI view that wraps WKWebView for displaying VS Code Web.
@@ -21,7 +22,7 @@ public struct VSCodeWebView: View {
     }
 
     public var body: some View {
-        VStack(spacing: 0) {
+        ZStack {
             if let errorMessage = viewModel.errorMessage {
                 ErrorView(message: errorMessage) {
                     viewModel.clearError()
@@ -29,8 +30,10 @@ public struct VSCodeWebView: View {
                 }
             } else {
                 WebViewRepresentable(viewModel: viewModel, onShortcut: onShortcut)
+                    .ignoresSafeArea()
             }
         }
+        .ignoresSafeArea()
         .onDisappear {
             viewModel.cleanup()
         }
@@ -46,8 +49,14 @@ private struct WebViewRepresentable: UIViewRepresentable {
         let webView = ShortcutCapturingWebView()
         webView.onShortcut = onShortcut
         webView.navigationDelegate = context.coordinator
+        webView.uiDelegate = context.coordinator
         context.coordinator.webView = webView
         viewModel.webView = webView
+
+        // VS Code Web handles keyboard-aware layout internally via JavaScript.
+        // Disabling automatic inset adjustment prevents the white bar artifact
+        // that appears at the bottom when the software keyboard is shown.
+        webView.scrollView.contentInsetAdjustmentBehavior = .never
 
         viewModel.navigationDidStart()
 
@@ -79,9 +88,11 @@ private struct WebViewRepresentable: UIViewRepresentable {
     }
 
     @MainActor
-    final class Coordinator: NSObject, WKNavigationDelegate, @unchecked Sendable {
+    final class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate, @unchecked Sendable {
         let viewModel: VSCodeWebViewModel
         weak var webView: WKWebView?
+        // Retained so it isn't deallocated before the OIDC popup closes.
+        private var popupWebView: WKWebView?
 
         init(viewModel: VSCodeWebViewModel) {
             self.viewModel = viewModel
@@ -114,6 +125,49 @@ private struct WebViewRepresentable: UIViewRepresentable {
             didFinish _: WKNavigation!
         ) {
             viewModel.navigationDidFinish()
+        }
+
+        // Called when a page uses window.open() — e.g. Vault opening a Google OIDC popup.
+        // Must return the new WKWebView so window.opener / postMessage communication works.
+        // The configuration parameter shares the process pool with the parent, which is
+        // required for Vault to receive the OIDC token back via postMessage.
+        func webView(
+            _ webView: WKWebView,
+            createWebViewWith configuration: WKWebViewConfiguration,
+            for navigationAction: WKNavigationAction,
+            windowFeatures: WKWindowFeatures
+        ) -> WKWebView? {
+            let popup = WKWebView(frame: webView.bounds, configuration: configuration)
+            popup.uiDelegate = self
+
+            let vc = UIViewController()
+            vc.view = popup
+            vc.modalPresentationStyle = .pageSheet
+            topmostViewController()?.present(vc, animated: true)
+
+            popupWebView = popup
+            return popup
+        }
+
+        // Called when the popup calls window.close() after OIDC completes.
+        func webViewDidClose(_ webView: WKWebView) {
+            guard webView === popupWebView else { return }
+            webView.window?.rootViewController?.dismiss(animated: true)
+            popupWebView = nil
+        }
+
+        private func topmostViewController() -> UIViewController? {
+            let scene = UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .first { $0.activationState == .foregroundActive }
+            guard let root = scene?.windows.first(where: { $0.isKeyWindow })?.rootViewController else {
+                return nil
+            }
+            var top = root
+            while let presented = top.presentedViewController {
+                top = presented
+            }
+            return top
         }
     }
 }

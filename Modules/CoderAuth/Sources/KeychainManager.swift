@@ -32,6 +32,8 @@ public protocol KeychainStoring: Sendable {
 public enum KeychainKeys {
     /// The default keychain key for the Coder session token.
     public static let sessionToken = "com.coder.session.token"
+    /// The keychain key for the server URL entered by the user.
+    public static let serverURL = "com.coder.server.url"
 }
 
 /// A keychain store backed by the system Security framework.

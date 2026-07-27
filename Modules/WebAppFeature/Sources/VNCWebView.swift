@@ -1,5 +1,6 @@
-#if canImport(WebKit)
+#if canImport(UIKit)
 import SwiftUI
+import UIKit
 import WebKit
 #if canImport(os)
 import os
@@ -252,4 +253,4 @@ private struct ErrorView: View {
         .padding()
     }
 }
-#endif
+#endif // canImport(UIKit)

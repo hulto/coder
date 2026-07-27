@@ -1,6 +1,10 @@
 import SwiftUI
 import CoderAuth
 
+extension Notification.Name {
+    static let coderResetSession = Notification.Name("com.coder.resetSession")
+}
+
 /// The Coder iOS app entry point.
 ///
 /// Owns the single long-lived ``AuthService`` instance and hosts the app's
@@ -13,6 +17,16 @@ struct CoderApp: App {
     var body: some Scene {
         WindowGroup {
             RootView(authService: authService)
+        }
+        .commands {
+            CommandGroup(after: .newItem) {
+                Button("Sign Out") {
+                    Task {
+                        try? await authService.resetSession()
+                        NotificationCenter.default.post(name: .coderResetSession, object: nil)
+                    }
+                }
+            }
         }
     }
 }

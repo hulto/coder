@@ -38,7 +38,10 @@
         },
         "subpath" : "SwiftTerm"
       }
+    ],
+    "prebuilts" : [
+
     ]
   },
-  "version" : 6
+  "version" : 7
 }

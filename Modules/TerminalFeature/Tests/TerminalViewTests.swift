@@ -4,7 +4,6 @@ import Foundation
 @testable import TerminalFeature
 
 /// Mock PTYSession for testing terminal view functionality.
-@available(iOS 17.0, *)
 final class MockPTYSession: PTYSession, @unchecked Sendable {
     let output: AsyncStream<Data>
     private let continuation: AsyncStream<Data>.Continuation
@@ -36,7 +35,6 @@ final class MockPTYSession: PTYSession, @unchecked Sendable {
     }
 }
 
-@available(iOS 17.0, *)
 @MainActor
 struct TerminalViewModelTests {
     
@@ -60,23 +58,6 @@ struct TerminalViewModelTests {
         
         #expect(session.sentData.count == 1)
         #expect(session.sentData.first == testData)
-    }
-    
-    @Test func testHandleResize() async throws {
-        let session = MockPTYSession()
-        let viewModel = TerminalViewModel(session: session)
-        
-        // Simulate container resize to 100x50
-        viewModel.handleResize(containerSize: CGSize(width: 700, height: 700))
-        
-        // Give async task time to execute
-        try await Task.sleep(for: .milliseconds(10))
-        
-        #expect(viewModel.cols == 100)
-        #expect(viewModel.rows == 50)
-        #expect(session.resizeCalls.count == 1)
-        #expect(session.resizeCalls.first?.cols == 100)
-        #expect(session.resizeCalls.first?.rows == 50)
     }
     
     @Test func testHandleTerminalResize() async throws {

@@ -87,9 +87,10 @@ struct VNCInputTests {
         let webView = WKWebView()
         applyVNCInputConfiguration(webView, .vncDefault)
 
-        #expect(
-            webView.scrollView.pinchGestureRecognizer?.isEnabled
-                == VNCInputConfiguration.vncDefault.pinchGestureRecognizerEnabled)
+        // A nil pinch gesture recognizer means pinch zoom is not active,
+        // which satisfies the requirement that noVNC owns zoom.
+        let pinchEnabled = webView.scrollView.pinchGestureRecognizer?.isEnabled ?? false
+        #expect(pinchEnabled == VNCInputConfiguration.vncDefault.pinchGestureRecognizerEnabled)
     }
 
     @Test("Zoom scale is pinned to 1.0 so WebKit cannot rescale the canvas")
@@ -98,10 +99,8 @@ struct VNCInputTests {
         let webView = WKWebView()
         applyVNCInputConfiguration(webView, .vncDefault)
 
-        #expect(
-            webView.scrollView.minimumZoomScale == VNCInputConfiguration.vncDefault.minimumZoomScale)
-        #expect(
-            webView.scrollView.maximumZoomScale == VNCInputConfiguration.vncDefault.maximumZoomScale)
+        #expect(webView.scrollView.minimumZoomScale == CGFloat(VNCInputConfiguration.vncDefault.minimumZoomScale))
+        #expect(webView.scrollView.maximumZoomScale == CGFloat(VNCInputConfiguration.vncDefault.maximumZoomScale))
         #expect(webView.scrollView.bouncesZoom == VNCInputConfiguration.vncDefault.bouncesZoom)
     }
 

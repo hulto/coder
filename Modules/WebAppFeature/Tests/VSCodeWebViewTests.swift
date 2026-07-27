@@ -118,5 +118,13 @@ struct VSCodeWebViewCreationTests {
         // View was successfully constructed; body is non-optional so no nil check needed.
         _ = view.body
     }
+
+    @Test("View can be created with a URL and token")
+    @MainActor
+    func viewCreationWithToken() {
+        let url = URL(string: "https://vscode.example.com")!
+        let view = VSCodeWebView(url: url, token: "test-token")
+        _ = view.body
+    }
 }
 #endif

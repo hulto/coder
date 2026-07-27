@@ -1,5 +1,7 @@
 #if canImport(UIKit)
+import SwiftUI
 import UIKit
+import WebKit
 #endif
 import Foundation
 
@@ -102,7 +104,7 @@ public class KeyCaptureView: UIView {
             guard let keyCommand = press.key else { continue }
             guard keyCommand.modifierFlags.contains(.command) else { continue }
 
-            if let shortcut = KeyboardShortcutMapper.map(input: keyCommand.input) {
+            if let shortcut = KeyboardShortcutMapper.map(input: keyCommand.charactersIgnoringModifiers) {
                 onShortcut?(shortcut)
                 handled = true
             }
@@ -150,7 +152,7 @@ class ShortcutCapturingWebView: WKWebView {
             guard let keyCommand = press.key else { continue }
             guard keyCommand.modifierFlags.contains(.command) else { continue }
 
-            if let shortcut = KeyboardShortcutMapper.map(input: keyCommand.input) {
+            if let shortcut = KeyboardShortcutMapper.map(input: keyCommand.charactersIgnoringModifiers) {
                 onShortcut?(shortcut)
                 handled = true
             }

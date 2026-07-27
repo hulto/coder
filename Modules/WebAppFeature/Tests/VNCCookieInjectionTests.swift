@@ -95,7 +95,9 @@ struct VNCCookieInjectionTests {
     @Test("injectCookies stores the session cookie for a VNC URL")
     @MainActor
     func injectCookiesStoresSessionCookie() async throws {
-        let webView = WKWebView()
+        let config = WKWebViewConfiguration()
+        config.websiteDataStore = WKWebsiteDataStore.nonPersistent()
+        let webView = WKWebView(frame: .zero, configuration: config)
         let url = URL(string: "https://vnc.example.com/path")!
         let token = "test-vnc-session-token"
 
@@ -112,7 +114,9 @@ struct VNCCookieInjectionTests {
     @Test("injectCookies throws for invalid URL and stores no cookie")
     @MainActor
     func injectCookiesThrowsForInvalidURL() async {
-        let webView = WKWebView()
+        let config = WKWebViewConfiguration()
+        config.websiteDataStore = WKWebsiteDataStore.nonPersistent()
+        let webView = WKWebView(frame: .zero, configuration: config)
         let url = URL(string: "http://vnc.example.com")!
 
         await #expect(throws: CookieInjectionError.self) {
@@ -131,7 +135,9 @@ struct VNCCookieInjectionTests {
         // store) before any navigation request is issued. We simulate the
         // call site's sequencing directly, since UIViewRepresentable.
         // makeUIView cannot be invoked outside of SwiftUI rendering.
-        let webView = WKWebView()
+        let config = WKWebViewConfiguration()
+        config.websiteDataStore = WKWebsiteDataStore.nonPersistent()
+        let webView = WKWebView(frame: .zero, configuration: config)
         let url = URL(string: "https://vnc.example.com")!
         let token = "ordering-test-token"
 

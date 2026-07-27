@@ -85,6 +85,7 @@ public struct CookieInjector: Sendable {
     ///   host or does not use HTTPS. Callers must not proceed to load the
     ///   URL when this throws, since the session would otherwise load
     ///   unauthenticated with no user-visible signal of the failure.
+    @MainActor
     public static func injectCookies(into webView: WKWebView, for url: URL, token: String) async throws {
         guard let cookie = makeCookie(for: url, token: token) else {
             print("[CookieInjector] Failed to create cookie, invalid URL")

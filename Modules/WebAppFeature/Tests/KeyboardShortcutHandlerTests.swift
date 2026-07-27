@@ -3,6 +3,8 @@ import Testing
 
 @testable import WebAppFeature
 
+private final class Box<T>: @unchecked Sendable { var value: T? }
+
 @Suite("KeyboardShortcut Tests")
 struct KeyboardShortcutTests {
 
@@ -170,14 +172,10 @@ struct KeyboardShortcutHandlerTests {
     @MainActor
     func keyCaptureViewHasCallback() {
         let view = KeyCaptureView()
-        var received: KeyboardShortcut?
-        view.onShortcut = { shortcut in
-            received = shortcut
-        }
-
-        // Callback can be set and invoked
+        let received = Box<KeyboardShortcut>()
+        view.onShortcut = { shortcut in received.value = shortcut }
         view.onShortcut?(.closeTab)
-        #expect(received == .closeTab)
+        #expect(received.value == .closeTab)
     }
 }
 
@@ -195,13 +193,10 @@ struct ShortcutCapturingWebViewTests {
     @MainActor
     func webViewHasCallback() {
         let webView = ShortcutCapturingWebView()
-        var received: KeyboardShortcut?
-        webView.onShortcut = { shortcut in
-            received = shortcut
-        }
-
+        let received = Box<KeyboardShortcut>()
+        webView.onShortcut = { shortcut in received.value = shortcut }
         webView.onShortcut?(.newFile)
-        #expect(received == .newFile)
+        #expect(received.value == .newFile)
     }
 }
 #endif

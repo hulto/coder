@@ -98,7 +98,18 @@ public actor AuthService {
         let tokenData = Data(token.utf8)
         try keychainStore.store(data: tokenData, forKey: KeychainKeys.sessionToken)
 
+        // Store server URL so it survives app restarts
+        let urlData = Data(serverURL.absoluteString.utf8)
+        try keychainStore.store(data: urlData, forKey: KeychainKeys.serverURL)
+
         return token
+    }
+
+    /// Returns the server URL last used for authentication, or `nil` if none is stored.
+    public func getStoredServerURL() async -> URL? {
+        guard let data = try? keychainStore.retrieve(forKey: KeychainKeys.serverURL),
+              let string = String(data: data, encoding: .utf8) else { return nil }
+        return URL(string: string)
     }
 
     /// Retrieves the stored session token, optionally requiring biometric authentication.
@@ -137,6 +148,15 @@ public actor AuthService {
     /// - Throws: ``AuthError/keychainError(statusCode:)`` if the deletion fails.
     public func signOut() async throws {
         try keychainStore.delete(forKey: KeychainKeys.sessionToken)
+    }
+
+    /// Clears the stored session token and server URL from the keychain.
+    ///
+    /// Use this when the user wants to log in to a different Coder instance.
+    /// - Throws: ``AuthError/keychainError(statusCode:)`` if a deletion fails.
+    public func resetSession() async throws {
+        try keychainStore.delete(forKey: KeychainKeys.sessionToken)
+        try keychainStore.delete(forKey: KeychainKeys.serverURL)
     }
 
     /// Checks whether a session token is currently stored.

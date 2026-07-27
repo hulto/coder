@@ -7,7 +7,7 @@ import Testing
 import WebKit
 
 /// Mock WKHTTPCookieStore for testing cookie injection without a real web view.
-final class MockHTTPCookieStore: NSObject, WKHTTPCookieStore, @unchecked Sendable {
+final class MockHTTPCookieStore: NSObject, @unchecked Sendable {
     private var _cookies: [HTTPCookie] = []
     private let lock = NSLock()
 
@@ -182,23 +182,4 @@ struct CookieInjectorTests {
     }
 }
 
-@Suite("VSCodeWebView Tests")
-struct VSCodeWebViewCreationTests {
-    @Test("View can be created with a URL")
-    @MainActor
-    func viewCreation() {
-        let url = URL(string: "https://vscode.example.com")!
-        let view = VSCodeWebView(url: url)
-        // View was successfully constructed; body is non-optional so no nil check needed.
-        _ = view.body
-    }
-
-    @Test("View can be created with a URL and token")
-    @MainActor
-    func viewCreationWithToken() {
-        let url = URL(string: "https://vscode.example.com")!
-        let view = VSCodeWebView(url: url, token: "test-token")
-        _ = view.body
-    }
-}
 #endif

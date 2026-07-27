@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C16FF49CC4D2F8CD3BDF556 /* WebAppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = E27F214F599EF78D4C5EE123 /* WebAppFeature */; };
+		3476AAB587C1070674464E82 /* TerminalFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 67D993F5AF286F2F5B096261 /* TerminalFeature */; };
+		4EB255ADCE9A746CC9AA6EF0 /* CoderAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C15E151EE223FA158EBCE9B /* CoderAuth */; };
+		4F2D3657F3851D5D5FAB5C51 /* CoderUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2E547037A4B504B6BBE1E841 /* CoderUI */; };
+		D3FEA6CB17D4E66C7BD40BB8 /* CoderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA47A04BD6A7D3EEE4C245E /* CoderApp.swift */; };
+		DB2908E1ABC42279C98B4A86 /* CoderKit in Frameworks */ = {isa = PBXBuildFile; productRef = B0A5B199D1AC62B3E7AC5CDD /* CoderKit */; };
+		EDEEE178FB5E2B542D373FE7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2C2F29AAED70E88787BD4 /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18D52B53CFBF72B98FA0A978 /* CoderKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoderKit; path = Modules/CoderKit; sourceTree = SOURCE_ROOT; };
+		596DA1C84918C4382FBDD492 /* CoderAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoderAuth; path = Modules/CoderAuth; sourceTree = SOURCE_ROOT; };
+		66EA4F9605E3C99835623735 /* TerminalFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TerminalFeature; path = Modules/TerminalFeature; sourceTree = SOURCE_ROOT; };
+		9C466BD40BB015C0454E97FD /* WebAppFeature */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WebAppFeature; path = Modules/WebAppFeature; sourceTree = SOURCE_ROOT; };
+		9FA47A04BD6A7D3EEE4C245E /* CoderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoderApp.swift; sourceTree = "<group>"; };
+		A16294E0055B4EA48D85025E /* CoderApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CoderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E41D9FAB1212C7776E864D /* CoderUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoderUI; path = Modules/CoderUI; sourceTree = SOURCE_ROOT; };
+		D8E2C2F29AAED70E88787BD4 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F216F6E0E1FF5AD3CA89BE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE4CEDD8263311C15FF96BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2908E1ABC42279C98B4A86 /* CoderKit in Frameworks */,
+				4EB255ADCE9A746CC9AA6EF0 /* CoderAuth in Frameworks */,
+				3476AAB587C1070674464E82 /* TerminalFeature in Frameworks */,
+				1C16FF49CC4D2F8CD3BDF556 /* WebAppFeature in Frameworks */,
+				4F2D3657F3851D5D5FAB5C51 /* CoderUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE24DAFC592316D86657459 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				596DA1C84918C4382FBDD492 /* CoderAuth */,
+				18D52B53CFBF72B98FA0A978 /* CoderKit */,
+				D1E41D9FAB1212C7776E864D /* CoderUI */,
+				66EA4F9605E3C99835623735 /* TerminalFeature */,
+				9C466BD40BB015C0454E97FD /* WebAppFeature */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		580FA71CDA0EC0FFFE428300 = {
+			isa = PBXGroup;
+			children = (
+				79DAE7E3D8B57A2CC03E8A81 /* AppShell */,
+				3DE24DAFC592316D86657459 /* Packages */,
+				6DC063CE01A0A4DE21D8D998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC063CE01A0A4DE21D8D998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A16294E0055B4EA48D85025E /* CoderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79DAE7E3D8B57A2CC03E8A81 /* AppShell */ = {
+			isa = PBXGroup;
+			children = (
+				9FA47A04BD6A7D3EEE4C245E /* CoderApp.swift */,
+				F216F6E0E1FF5AD3CA89BE36 /* Info.plist */,
+				D8E2C2F29AAED70E88787BD4 /* RootView.swift */,
+			);
+			name = AppShell;
+			path = Sources/AppShell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C41F1C053C0E2277BD1CFB67 /* CoderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3183DDE238D5DACC7D39C426 /* Build configuration list for PBXNativeTarget "CoderApp" */;
+			buildPhases = (
+				53744C5BDA258449D0D2E03E /* Sources */,
+				FE4CEDD8263311C15FF96BB4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoderApp;
+			packageProductDependencies = (
+				B0A5B199D1AC62B3E7AC5CDD /* CoderKit */,
+				0C15E151EE223FA158EBCE9B /* CoderAuth */,
+				67D993F5AF286F2F5B096261 /* TerminalFeature */,
+				E27F214F599EF78D4C5EE123 /* WebAppFeature */,
+				2E547037A4B504B6BBE1E841 /* CoderUI */,
+			);
+			productName = CoderApp;
+			productReference = A16294E0055B4EA48D85025E /* CoderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF04D575214F8554C08CE8D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C41F1C053C0E2277BD1CFB67 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE0214ED264229AABF17BDB0 /* Build configuration list for PBXProject "CoderApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 580FA71CDA0EC0FFFE428300;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F337F50E607A5D9C5A014D2 /* XCLocalSwiftPackageReference "Modules/CoderAuth" */,
+				B6A538397B65E3F29A3BB14E /* XCLocalSwiftPackageReference "Modules/CoderKit" */,
+				DE761F700C297C27805DADA4 /* XCLocalSwiftPackageReference "Modules/CoderUI" */,
+				D477B233145949CB6C2A2974 /* XCLocalSwiftPackageReference "Modules/TerminalFeature" */,
+				516064ED17C642BBC6A7C3B3 /* XCLocalSwiftPackageReference "Modules/WebAppFeature" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6DC063CE01A0A4DE21D8D998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C41F1C053C0E2277BD1CFB67 /* CoderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53744C5BDA258449D0D2E03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FEA6CB17D4E66C7BD40BB8 /* CoderApp.swift in Sources */,
+				EDEEE178FB5E2B542D373FE7 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0EDAC55DC3870A017BAD9BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		3A92D96E67A98586CDDCBA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AppShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4684CABD4CE4B37092E4F1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AppShell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coder.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B41D059959EA995971589344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3183DDE238D5DACC7D39C426 /* Build configuration list for PBXNativeTarget "CoderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A92D96E67A98586CDDCBA9F /* Debug */,
+				4684CABD4CE4B37092E4F1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE0214ED264229AABF17BDB0 /* Build configuration list for PBXProject "CoderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EDAC55DC3870A017BAD9BBA /* Debug */,
+				B41D059959EA995971589344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		516064ED17C642BBC6A7C3B3 /* XCLocalSwiftPackageReference "Modules/WebAppFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/WebAppFeature;
+		};
+		9F337F50E607A5D9C5A014D2 /* XCLocalSwiftPackageReference "Modules/CoderAuth" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/CoderAuth;
+		};
+		B6A538397B65E3F29A3BB14E /* XCLocalSwiftPackageReference "Modules/CoderKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/CoderKit;
+		};
+		D477B233145949CB6C2A2974 /* XCLocalSwiftPackageReference "Modules/TerminalFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/TerminalFeature;
+		};
+		DE761F700C297C27805DADA4 /* XCLocalSwiftPackageReference "Modules/CoderUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/CoderUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C15E151EE223FA158EBCE9B /* CoderAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoderAuth;
+		};
+		2E547037A4B504B6BBE1E841 /* CoderUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoderUI;
+		};
+		67D993F5AF286F2F5B096261 /* TerminalFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TerminalFeature;
+		};
+		B0A5B199D1AC62B3E7AC5CDD /* CoderKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoderKit;
+		};
+		E27F214F599EF78D4C5EE123 /* WebAppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebAppFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EF04D575214F8554C08CE8D4 /* Project object */;
+}

@@ -1,9 +1,10 @@
 import SwiftUI
 import CoderAuth
 import CoderUI
+import WebAppFeature
 
 /// The app's root view, responsible for resolving launch state once and
-/// switching between the login screen and the signed-in placeholder.
+/// switching between the login screen and the primary web shell.
 struct RootView: View {
     private enum LaunchState {
         case checking
@@ -15,6 +16,8 @@ struct RootView: View {
 
     @State private var launchState: LaunchState = .checking
     @State private var loginViewModel: LoginViewModel
+    @State private var signedInURL: URL?
+    @State private var signedInToken: String = ""
 
     init(authService: AuthService) {
         self.authService = authService
@@ -26,46 +29,52 @@ struct RootView: View {
             switch launchState {
             case .checking:
                 ProgressView()
+
             case .signedOut:
                 LoginView(viewModel: loginViewModel)
                     .onChange(of: loginViewModel.isAuthenticated) { _, authenticated in
-                        if authenticated {
-                            launchState = .signedIn
+                        guard authenticated else { return }
+                        if let url = URL(string: loginViewModel.serverURL) {
+                            signedInURL = url
+                            AppSettings.shared.baseURL = url.absoluteString
+                            Task {
+                                signedInToken = (try? await authService.getStoredToken()) ?? ""
+                                launchState = .signedIn
+                            }
                         }
                     }
+
             case .signedIn:
-                SignedInPlaceholderView(serverURL: loginViewModel.serverURL)
+                if let url = signedInURL {
+                    CoderWebView(url: url, token: signedInToken.isEmpty ? nil : signedInToken)
+                } else {
+                    // No URL was recoverable from the Keychain; require re-login.
+                    ProgressView()
+                        .task { launchState = .signedOut }
+                }
             }
         }
         .task {
-            // Resolve the launch state exactly once by checking the Keychain
-            // for an existing session token.
-            guard launchState == .checking else { return }
-            let hasToken = await authService.hasStoredToken()
-            launchState = hasToken ? .signedIn : .signedOut
-        }
-    }
-}
-
-/// A minimal placeholder shown after a successful sign-in.
-///
-/// There is no workspace list or detail UI yet, so this screen exists solely
-/// to confirm the app navigated past login. It never displays the session
-/// token, only the non-secret server URL the user entered.
-struct SignedInPlaceholderView: View {
-    let serverURL: String
-
-    var body: some View {
-        VStack(spacing: 12) {
-            Text("Signed in")
-                .font(.title)
-                .fontWeight(.bold)
-            if !serverURL.isEmpty {
-                Text(serverURL)
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
+            guard case .checking = launchState else { return }
+            guard await authService.hasStoredToken() else {
+                launchState = .signedOut
+                return
             }
+            // Recover persisted URL and token so CoderWebView can resume the session.
+            guard let url = await authService.getStoredServerURL() else {
+                launchState = .signedOut
+                return
+            }
+            signedInURL = url
+            signedInToken = (try? await authService.getStoredToken()) ?? ""
+            AppSettings.shared.baseURL = url.absoluteString
+            launchState = .signedIn
         }
-        .padding()
+        .onReceive(NotificationCenter.default.publisher(for: .coderResetSession)) { _ in
+            signedInURL = nil
+            signedInToken = ""
+            loginViewModel = LoginViewModel(authService: authService)
+            launchState = .signedOut
+        }
     }
 }
